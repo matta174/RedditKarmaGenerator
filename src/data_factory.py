@@ -15,7 +15,7 @@ reactor.run()
 submission_id_list = [] # will collect the submission id's for comparision later.
 
 
-for submission in reddit.subreddit('learnpython').hot(limit=10):
+for submission in reddit.subreddit('all').hot(limit=10):
     submission_id_list.append(submission.id)
     print(submission.title)
 
